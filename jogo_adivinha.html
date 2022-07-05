@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+	var numeroEscolhido = Math.round(Math.random() * 10);
+
+	var tentativa = 1;
+
+	while(tentativa <= 3) {
+		var chute = parseInt(prompt("digite um número de 0 a 10!"));
+
+		if(chute == numeroEscolhido) {
+    		alert("Você ACERTOU!");
+    		break;
+		} else {
+    		alert("Você ERROU!");
+
+		} if(tentativa == 3){
+			alert("O número escolhido foi " + numeroEscolhido + ".");
+		}
+
+		tentativa++;
+	}
+	
+	alert(" Para recomeçar o jogo, aperte F5 ou no botão de atulalizar.");
+
+</script>
